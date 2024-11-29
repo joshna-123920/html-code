@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    table,th,td{
+        border:1px;
+        border-color:blueviolet;
+        border-style:solid;
+    }
+    .attribute{
+        font-size:120%;
+    color: blue;
+    }
+    #ID{
+       text-align: center;
+    }
+h1{
+    background-color:pink;
+    text-align:center;
+}
+body{
+    background-color: antiquewhite;
+    border-color :black;
+}
+</style>
+</head>
+<body>
+    <h1>HTML</h1>
+    <p>HTML (HyperText Markup Language) is the code that is used to structure a web page and its content.</p>
+    <h2 style="color: brown;">Images</h2>
+    <p>Images can improve the design and the appearance of a web page.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvlaAxShqvt99vGAITMfvFcjTPupbKVCen2A&s">
+    <h2 style="color: brown;">Video</h2>
+    <p>The html video element is used to show a video on a web page.</p>
+    <video width="600px" height="300px"controls>
+        <source src="https://www.google.com/search?q=css&sca_esv=31e82a7279b06800&rlz=1C5CHFA_enIN1092IN1092&udm=7&biw=708&bih=694&ei=n7BJZ7e4ObiWnesPuoLm0Qs&ved=0ahUKEwj3g9LawoGKAxU4S2cHHTqBOboQ4dUDCA8&uact=5&oq=css&gs_lp=EhZnd3Mtd2l6LW1vZGVsZXNzLXZpZGVvIgNjc3MyEBAAGIAEGLEDGEMYgwEYigUyDRAAGIAEGLEDGEMYigUyCBAAGIAEGLEDMggQABiABBixAzIIEAAYgAQYsQMyChAAGIAEGEMYigUyCBAAGIAEGLEDMg0QABiABBixAxhDGIoFMggQABiABBixAzIIEAAYgAQYsQNIm6cIUPIFWK-dCHAFeAGQAQCYAa8GoAHdFKoBCTAuNi4xLjYtMrgBA8gBAPgBAZgCDKAClxWoAgDCAgoQABiwAxjWBBhHwgILEAAYgAQYsQMYgwHCAgUQABiABMICDhAAGIAEGLEDGIMBGIoFwgILEAAYgAQYsQMYigWYAwKIBgGQBgiSBwszLjYuMS41LTEuMaAH3i0&sclient=gws-wiz-modeless-video#" type="video/mp4">
+    </video>
+    <h2 style="color: brown;">List</h2>
+    <p>The HTML list tag is used to group related pieces of information.</p>
+    <ol><li>Ordered List</li>
+    <li>Unordered List</li>
+<li>Description List</li></ol>
+    <h3>Ordered List</h3>
+    <ol type="a"><li>Ordered List or Numbered List (ol) In HTML, all the list items in an ordered list are marked with numbers by default instead of bullets.</li>
+         <li>An ordered list can be numerical or alphabetical.</li></ol>
+<h3>Unordered List</h3>
+<ul style="list-style-type: square;"><li>An unordered list is used to create a list of items in no particular order i.e. the order of items is not relevant. </li>
+    <li>By default, the items in this list will be marked with bullets. </li></ul>
+    <h3>Description List</h3>
+        <p>A description list is a list of terms, with a description of each term.</p>
+    </h3>
+    <h2 style="color: brown;">Attributes</h2>
+    <p>Attributes provides additional information to the elements.</p>
+    <dl><dt><b>src attribute</b><dt><dd>The src attribute specifies the path to the image to be disply.</dd><dt><b>href attribute</b></dt><dd>The href attribute specifies the URL of the page the link.</dd><dt><b>style attribute</b></dt><dd>The style attribute is used to add styles to an element, such as color, font, size, and more.</dd><dt><b>width and height attribute</b></dt><dd>The image tag should also contain the width and height attributes, which specify the width and height of the image (in pixels).
+</dd></dl>
+    <h2 style="color: brown;">Tables</h2>
+    <p>HTML tables allow web developers to arrange data into rows and columns.</p>
+    <table><caption><b>Student Marks</b></caption><tr><th>S.No</th>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Marks</th></tr>
+    <tr><td rowspan="4">1</td><td rowspan="4">Deepthi</td></tr>
+       <tr><td>Telugu</td>
+        <td>90</td></tr>
+    <tr><td>English</td>
+    <td>80</td></tr>
+<tr><td>Social</td>
+<td>70</td></tr></table>
+<h2 style="color: brown;">Class</h2>
+<p>The HTML <span class="attribute">class</span> attribute is used to specify a <span class="attribute">class</span> for an HTML element. We can call the <span class="attribute">class</span> with the use of ".".</p>
+<h2 style="color:brown;">Id</h2>
+<p>The HTML id attribute is used to specify a unique id for an HTML element. We can call the id with the use of "#".
+</p>
+<p id="ID">ID Attribute</p>
+<h2 style="color: brown;">Forms</h2>
+<p>An HTML form is used to collect user input. The form element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p>
+<h3>Input Element</h3>
+<ul><li>The input element is the most used form element.</li><li>An input element can be displayed in many ways, depending on the type attribute.</li>
+<h3>Fieldset</h3>
+<ul><li>The fieldset tag is used to group related elements in a form.</li></ul>
+<h3>Form</h3>
+    <form>
+    <fieldset style="background-color: aqua;">
+        <legend>Information</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id=""fname" name="fname" placeholder="enter name"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname"><br>
+<label for="pwd">Password:</label><br>
+    <input type="pwd" id="pwd"/><br>
+    <label for="number">Aadhar number:</label><br>
+    <input type="number" id="number"><br>
+    <label for="email">Enter your email:</label><br>
+    <input type="email" id="email" name="email" placeholder="email"><br>
+    <label for="address">Enter your address:</label><br>
+    <textarea></textarea><br>
+<label for="gender">Enter your gender:</label><br>
+<input type="radio" id="gender" name="gender" value="Male"/>Male<br>
+<input type="radio" id="gender" name="gender" value="Female"/>Female<br>
+<input type="radio" id="gender" name="gender" value="Other"/>Other<br>
+<label for="date">Date Of Birth:</label>
+<input type="date" id="date" name="date">
+<input type="submit" value="Submit"><br>
+<label for="status">Marital Status:</label><br>
+<input type="checkbox" id="status" name="status" value="status"/>Single<br>
+<input type="checkbox" id="status" name="status" value="status"/>Married<br>
+<input type="checkbox" id="status" name="status" value="status"/>Widowed<br>
+<input type="checkbox" id="status" name="status" value="status"/>Divorced<br>
+<label for="favcolor">Select your favorite color:</label><br>
+<input type="color" id="favcolor" name="favcolor"><br>
+<input type="button" onclick="alert('Thank you')" value="Click Me!"><br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+    </fieldset>
+    </form>
+<h2 style="color:brown">iframe</h2>
+    <p>An HTML iframe is used to display a web page within a web page.</p>
+ <iframe width="420px" height="300px" src="https://youtu.be/3C1n5lqGdmY?si=ZWn2k_SQHQvkNgQa"></iframe><br> 
+ <h2 style="color:brown">anchor tag</h2>
+ <p>An anchor is a piece of text which marks the beginning and/or the end of a hypertext link.</p>
+ <a href="https://www.pexels.com/search/beautiful/">click me</a>
+ <h1>CSS</h1>
+<p>CSS stands for Cashcading Style Sheets.
+    CSS is the language we use to style an HTML document.</p>
+<p>Types of CSS:</p>
+<ul style="list-style-type: upper-roman;"><li>Inline CSS</li>
+<li>Internal CSS</li>
+<li>External CSS</li></ul>
+<p>By using CSS we control</p>
+<ul style="list-style-type:upper-alpha;"><li>Color</li>
+<li>Font</li>
+<li>Size of the text</li>
+<li>Spacing between the elements</li>
+<li>Background-color</li>
+<li>Background-images and etc.,</li>
+</ul>
+</body>
+</html>
